@@ -7,6 +7,9 @@ import { Layout } from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import LessonPlanning from "./pages/LessonPlanning";
 import Analytics from "./pages/Analytics";
+import Assignments from "./pages/Assignments";
+import Communication from "./pages/Communication";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +25,9 @@ const App = () => (
             <Route path="/" element={<Dashboard />} />
             <Route path="/lessons" element={<LessonPlanning />} />
             <Route path="/analytics" element={<Analytics />} />
+            <Route path="/assignments" element={<Assignments />} />
+            <Route path="/communication" element={<Communication />} />
+            <Route path="/settings" element={<Settings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
